@@ -35,3 +35,14 @@
 {
     margin-top: 5%;
 }
+#loader
+{
+    margin-top:10%;
+    display: none;
+}
+.center
+{
+    text-align: center;
+    
+    
+}
