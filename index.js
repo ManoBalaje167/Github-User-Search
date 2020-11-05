@@ -20,11 +20,12 @@ function func()
 {
     inp=document.getElementById("in");
     inp.addEventListener("oninput",debounce((e)=>{
-        
+    document.getElementById("loader").style.display="inline";
         
     text=inp.value;
     fetch("https://api.github.com/search/users?q="+text).then((res)=> res.json()).then((data)=>{
         //console.log(data);
+        document.getElementById("loader").style.display="none";
         c=0;
         count=document.getElementById("result_count");
         if(count.hasChildNodes())
